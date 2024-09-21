@@ -23,6 +23,27 @@
 
 ### Running the Tool
 
+```sh
+┌──(kali😈kali)-[~/SquidSideOut]
+└─$ SquidSideOut -h
+Usage of SquidSideOut:
+  -debug
+        Enable debug output
+  -ip string
+        Target IP or IP range (CIDR notation). Example: 192.168.1.1 or 192.168.1.0/24 (default "127.0.0.1")
+  -ports string
+        Port or port range to scan. Example: 80,443 or 20-100 (optional, defaults to ports.txt)
+  -proxy-ip string
+        Squid proxy IP address (default "172.16.40.150")
+  -proxy-port string
+        Squid proxy port (default "3128")
+  -timeout int
+        Timeout threshold in seconds to determine if a port is closed (default 5)
+  -workers int
+        Number of concurrent workers (default 100)
+```
+
+
 #### Scanning Localhost through Squid Proxy (Main Use Case)
 
 To scan ports bound to `localhost` on the Squid proxy host:
@@ -53,7 +74,7 @@ SquidSideOut -proxy-ip <squid-proxy-ip> -proxy-port <proxy-port> -ports 22,80,44
 
 ```sh
 ┌──(kali😈kali)-[~/SquidSideOut]
-└─$ go run SquidSideOut.go -proxy-ip <squid-proxy-ip> -proxy-port <proxy-port> -debug
+└─$ SquidSideOut -proxy-ip <squid-proxy-ip> -proxy-port <proxy-port> -debug
 Scanning IP: 127.0.0.1
 Port 8080 open on 127.0.0.1!
 Port 443 open on 127.0.0.1!
