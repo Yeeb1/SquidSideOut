@@ -14,7 +14,7 @@
 -  The repository includes a `ports.txt` file with the 1000 most common ports by Nmap.
 - Set the timeout to control how long the tool waits before determining if a port is closed. Fiddeling with these settings can help to prevent false positives on slow connections,.
 - Scan multiple ports or hosts simultaneously using concurrent workers for faster results.
-- **Debug Mode for Detailed Logs**: Enable debug mode to log detailed scanning activities, including failed connection attempts and retries.
+- Enable debug mode to log detailed scanning activities, including failed connection attempts and retries.
 
 ### Use Cases
 - Assessing Internal Ports on Squid Proxy: The core purpose of SquidSideOut is to detect ports bound to localhost on hosts running Squid proxy, revealing internal services that may otherwise be difficult to assess.
