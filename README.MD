@@ -28,14 +28,14 @@
 To scan ports bound to `localhost` on the Squid proxy host:
 
 ```sh
-go run SquidSideOut.go -proxy-ip <squid-proxy-ip> -proxy-port <proxy-port>
+SquidSideOut -proxy-ip <squid-proxy-ip> -proxy-port <proxy-port>
 ```
 #### Scanning Remote Hosts Behind Squid Proxy
 
 To get an initial overview of the network behind the Squid proxy by scanning remote hosts:
 
 ```sh
-go run SquidSideOut.go -proxy-ip <squid-proxy-ip> -proxy-port <proxy-port> -ip <target-ip/cidr>
+SquidSideOut -proxy-ip <squid-proxy-ip> -proxy-port <proxy-port> -ip <target-ip/cidr>
 ```
 
 #### Port Range and Input Options
@@ -43,11 +43,10 @@ You can specify a port range or use a CSV list of ports:
 
 ```sh
 # Specify a range of ports
-go run SquidSideOut.go -proxy-ip <squid-proxy-ip> -proxy-port <proxy-port> -ports 80-8080
+SquidSideOut -proxy-ip <squid-proxy-ip> -proxy-port <proxy-port> -ports 80-8080
 
 # Or, specify ports as a CSV list
-go run SquidSideOut.go -proxy-ip <squid-proxy-ip> -proxy-port <proxy-port> -ports 22,80,443
-
+SquidSideOut -proxy-ip <squid-proxy-ip> -proxy-port <proxy-port> -ports 22,80,443
 ```
 
 #### Example Output
