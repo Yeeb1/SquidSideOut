@@ -21,7 +21,7 @@ var debug bool
 func main() {
 	targetIP := flag.String("ip", "127.0.0.1", "Target IP or IP range (CIDR notation). Example: 192.168.1.1 or 192.168.1.0/24")
 	portRange := flag.String("ports", "", "Port or port range to scan. Example: 80,443 or 20-100 (optional, defaults to ports.txt)")
-	proxyIP := flag.String("proxy-ip", "172.16.40.150", "Squid proxy IP address")
+	proxyIP := flag.String("proxy-ip", "192.168.1.1", "Squid proxy IP address")
 	proxyPort := flag.String("proxy-port", "3128", "Squid proxy port")
 	numWorkers := flag.Int("workers", 100, "Number of concurrent workers")
 	timeoutThreshold := flag.Int("timeout", 5, "Timeout threshold in seconds to determine if a port is closed")
