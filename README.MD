@@ -34,7 +34,7 @@ Usage of SquidSideOut:
   -ports string
         Port or port range to scan. Example: 80,443 or 20-100 (optional, defaults to ports.txt)
   -proxy-ip string
-        Squid proxy IP address (default "172.16.40.150")
+        Squid proxy IP address (default "192.168.1.1")
   -proxy-port string
         Squid proxy port (default "3128")
   -timeout int
