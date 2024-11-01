@@ -1,7 +1,7 @@
 # SquidSideOut - Internal Port Scanner for Squid Proxy
 
 <p align="center">
-  <img src="/img/squidsideout.webp" width="200">
+  <img src="/img/squidsideout.webp" width="300">
 </p>
 
 **SquidSideOut** is a tool to assess ports bound to `localhost` on a host running a Squid HTTP proxy (or basically any other HTTP based proxy). Additionally, the tool can be used to get a first glimpse of the network behind the proxy by scanning remote hosts accessible through the HTTP proxy.
